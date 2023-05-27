@@ -18,6 +18,10 @@ public class Jatekter {
         this.jatekter.set(place, newItem);
     }
 
+    public int getJatekterMeret() {
+        return jatekter.size();
+    }
+
     @Override
     public String toString() {
         StringBuilder toReturn = new StringBuilder();

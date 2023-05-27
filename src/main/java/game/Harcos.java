@@ -4,6 +4,7 @@ import util.Utils;
 
 public class Harcos {
     private int eletero;
+    private int pozicio;
 
     public Harcos() {
         initHarcos();
@@ -14,12 +15,28 @@ public class Harcos {
         this.setEletero(newEletero);
     }
 
+    public int tamad() {
+        return Utils.kockadobas(6);
+    }
+
+    public void sebzodik(int tamadasEreje) {
+        this.setEletero(this.getEletero() - tamadasEreje);
+    }
+
     public int getEletero() {
         return eletero;
     }
 
     public void setEletero(int eletero) {
         this.eletero = eletero;
+    }
+
+    public int getPozicio() {
+        return pozicio;
+    }
+
+    public void setPozicio(int pozicio) {
+        this.pozicio = pozicio;
     }
 
     @Override

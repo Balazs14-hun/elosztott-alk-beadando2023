@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Jatek {
     private final Jatekter jatekter;
-    private final Harcos harcos;
-    private final Varazslo varazslo;
+    public final Harcos harcos;
+    public final Varazslo varazslo;
 
     public Jatek() {
         this.jatekter = new Jatekter();
@@ -41,7 +41,7 @@ public class Jatek {
         System.out.println("Jatek vege!");
     }
 
-    private void jatekKor() {
+    public void jatekKor() {
         Random rand = new Random();
         int harcosUjPozicio = rand.nextInt(this.jatekter.getJatekterMeret());
         int varazsloUjPozicio = rand.nextInt(this.jatekter.getJatekterMeret());
@@ -79,6 +79,10 @@ public class Jatek {
             toRetrun += this.varazslo + ":" + this.varazslo.getEletero();
             return toRetrun;
         }
+    }
+
+    public Jatekter getJatekter() {
+        return jatekter;
     }
 
     @Override

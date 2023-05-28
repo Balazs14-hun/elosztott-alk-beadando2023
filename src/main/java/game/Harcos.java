@@ -2,7 +2,7 @@ package game;
 
 import util.Utils;
 
-class Harcos implements Karakter {
+public class Harcos implements Karakter {
     private int eletero;
     private int pozicio;
 

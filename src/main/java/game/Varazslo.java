@@ -2,7 +2,7 @@ package game;
 
 import util.Utils;
 
-class Varazslo implements Karakter {
+public class Varazslo implements Karakter {
     private int eletero;
     private int pozicio;
 

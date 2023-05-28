@@ -3,9 +3,9 @@ package game;
 import java.util.Random;
 
 public class Jatek {
-    private Jatekter jatekter;
-    private Harcos harcos;
-    private Varazslo varazslo;
+    private final Jatekter jatekter;
+    private final Harcos harcos;
+    private final Varazslo varazslo;
 
     public Jatek() {
         this.jatekter = new Jatekter();
@@ -66,17 +66,17 @@ public class Jatek {
     public String kiirAllas() {
         String toRetrun = "";
         if (this.harcos.getPozicio() == this.varazslo.getPozicio()) {
-            toRetrun += this.jatekter.toString() + " --> ";
+            toRetrun += this.jatekter + " --> ";
             toRetrun += "harc: ";
-            toRetrun += this.harcos.toString() + ":" + this.harcos.getEletero();
+            toRetrun += this.harcos + ":" + this.harcos.getEletero();
             toRetrun += ", ";
-            toRetrun += this.varazslo.toString() + ":" + this.varazslo.getEletero();
+            toRetrun += this.varazslo + ":" + this.varazslo.getEletero();
             return toRetrun;
         } else {
-            toRetrun += this.jatekter.toString() + " --> ";
-            toRetrun += this.harcos.toString() + ":" + this.harcos.getEletero();
+            toRetrun += this.jatekter + " --> ";
+            toRetrun += this.harcos + ":" + this.harcos.getEletero();
             toRetrun += ", ";
-            toRetrun += this.varazslo.toString() + ":" + this.varazslo.getEletero();
+            toRetrun += this.varazslo + ":" + this.varazslo.getEletero();
             return toRetrun;
         }
     }

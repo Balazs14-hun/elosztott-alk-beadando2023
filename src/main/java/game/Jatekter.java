@@ -2,7 +2,7 @@ package game;
 
 import java.util.*;
 
-public class Jatekter {
+class Jatekter {
     private final List<String> jatekter;
 
     public Jatekter() {
